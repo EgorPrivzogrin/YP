@@ -130,7 +130,7 @@ namespace WpfApp2
             var report = excelGenerator.Generate(hrreport);
             try
             {
-                File.WriteAllBytes("../../../Reports/Files/Отчет отдела кадров.xlsx", report);
+                File.WriteAllBytes("Отчет отдела кадров.xlsx", report);
             }
             catch
             {
