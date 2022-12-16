@@ -22,6 +22,9 @@ namespace WpfApp2
     public partial class MainWindow : Window
     {
         ApplicationContext db = new ApplicationContext();
+        ExcelGenerator excelGenerator = new ExcelGenerator();
+        Hrreport hrreport = new Hrreport();
+        List<Employment> employments = new List<Employment>();
         public MainWindow()
         {
             InitializeComponent();
@@ -33,6 +36,7 @@ namespace WpfApp2
         {
             db.Database.EnsureCreated();
             db.Employments.Load();
+            db.Employments.ForEachAsync(employment => Hrreport.Employments.Add(employment));
             DataContext= db.Employments.Local.ToObservableCollection();
         }
 
@@ -118,6 +122,19 @@ namespace WpfApp2
                 {
                     employmentsList.Items.Refresh();
                 }
+            }
+        }
+
+        private void CreateExelFile_Click(object sender, EventArgs e)
+        {
+            var report = excelGenerator.Generate(hrreport);
+            try
+            {
+                File.WriteAllBytes("../../../Reports/Files/Отчет отдела кадров.xlsx", report);
+            }
+            catch
+            {
+                MessageBox.Show("Пожалуйста,закройте файл и повторите сохранение", "Ошибка!", MessageBoxButton.OK);
             }
         }
     }

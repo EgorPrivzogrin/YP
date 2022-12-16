@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nezuk_0\\source\\repos\\WpfApp2\\WpfApp2\\WpfApp2.csproj": {}
+    "C:\\Users\\user\\Source\\Repos\\YP\\WpfApp2\\WpfApp2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nezuk_0\\source\\repos\\WpfApp2\\WpfApp2\\WpfApp2.csproj": {
+    "C:\\Users\\user\\Source\\Repos\\YP\\WpfApp2\\WpfApp2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nezuk_0\\source\\repos\\WpfApp2\\WpfApp2\\WpfApp2.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\YP\\WpfApp2\\WpfApp2.csproj",
         "projectName": "WpfApp2",
-        "projectPath": "C:\\Users\\Nezuk_0\\source\\repos\\WpfApp2\\WpfApp2\\WpfApp2.csproj",
-        "packagesPath": "C:\\Users\\Nezuk_0\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nezuk_0\\source\\repos\\WpfApp2\\WpfApp2\\obj\\",
+        "projectPath": "C:\\Users\\user\\Source\\Repos\\YP\\WpfApp2\\WpfApp2.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Source\\Repos\\YP\\WpfApp2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Nezuk_0\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,22 +39,6 @@
       "frameworks": {
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Sqlite": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[7.0.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -66,15 +50,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            },
-            "Microsoft.WindowsDesktop.App.WPF": {
-              "privateAssets": "none"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
