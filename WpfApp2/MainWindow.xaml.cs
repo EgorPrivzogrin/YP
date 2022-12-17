@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace WpfApp2
 {
@@ -36,7 +37,6 @@ namespace WpfApp2
         {
             db.Database.EnsureCreated();
             db.Employments.Load();
-            db.Employments.ForEachAsync(employment => Hrreport.Employments.Add(employment));
             DataContext= db.Employments.Local.ToObservableCollection();
         }
 
@@ -127,10 +127,11 @@ namespace WpfApp2
 
         private void CreateExelFile_Click(object sender, EventArgs e)
         {
+            db.Employments.ForEachAsync(hrreport.Employments.Add);
             var report = excelGenerator.Generate(hrreport);
             try
             {
-                File.WriteAllBytes("Отчет отдела кадров.xlsx", report);
+                File.WriteAllBytes("../../../Reports/Отчет отдела кадров.xlsx", report);
             }
             catch
             {

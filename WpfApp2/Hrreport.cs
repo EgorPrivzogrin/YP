@@ -16,7 +16,12 @@ namespace WpfApp2
             set { employments = value; }
         }
 
-        public HRReport(List<Employment> employments)
+        public Hrreport()
+        {
+            Employments = new List<Employment>();
+        }
+
+        public Hrreport(List<Employment> employments)
         {
             this.employments = employments;
         }

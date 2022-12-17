@@ -26,7 +26,8 @@
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
             <Button Content="Нанять" Margin="10" Click="Add_Click" Foreground="#FF0D1117" Background="White" />
             <Button Content="Уволить" Margin="10" Click="Delete_Click"  Foreground="#FF0D1117" Background="White" />
-            <Button Content="В Exel" Margin="10" Click="CreateExelFile_Click"  Foreground="#FF0D1117" Background="White" />
+            <Button Content="Изменить" Margin="10" Click="Edit_Click"  Foreground="#FF0D1117" Background="White" />
+            <Button Content="Экспорт в Exсel" Margin="10" Click="CreateExelFile_Click"  Foreground="#FF0D1117" Background="White" />
         </StackPanel>
     </Grid>
 </Window>
